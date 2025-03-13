@@ -1,0 +1,8 @@
+services:
+  openmanus:
+    build: .
+    volumes:
+      - ./config:/app/OpenManus/config
+    ports:
+      - "8000:8000"
+
