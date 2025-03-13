@@ -1,8 +1,8 @@
 # Global LLM configuration
 [llm]
 model = "gemma3:12b"
-base_url = "https://localhost:11434/v1"
-api_key = "sk-..."
+base_url = "http://host.docker.internal:11434/v1"
+api_key = "ollama"
 max_tokens = 4096
 temperature = 0.0
 
