@@ -16,7 +16,7 @@ Now, open file `./config/config.toml` with your favourite editor and enter your 
 # Global LLM configuration
 [llm]
 model = "gemma3:12b"
-base_url = "http://127.0.0.1:11434/v1"
+base_url = "http://host.docker.internal:11434/v1"
 api_key = "ollama"
 max_tokens = 4096
 temperature = 0.0
