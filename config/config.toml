@@ -1,6 +1,6 @@
 # Global LLM configuration
 [llm]
-model = "gemma3:12b"
+model = "qwen2.5-coder:14b"
 base_url = "http://host.docker.internal:11434/v1"
 api_key = "ollama"
 max_tokens = 4096
