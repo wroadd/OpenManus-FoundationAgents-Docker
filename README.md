@@ -10,12 +10,12 @@ In order to build and run Docker images you must have Docker installed - for mos
 
 Once done, download this repository and unpack it into a folder of your choice (e.g., `OpenManus`).
 
-Now, open file `./config/config.toml` with your favourite editor and enter your configuration details. If you plan to use [Ollama](https://ollama.com/) with a locally installed LLM (e.g., the brand new `gemma3:12b`), the first lines of your configuration may look as follows:
+Now, open file `./config/config.toml` with your favourite editor and enter your configuration details. If you plan to use [Ollama](https://ollama.com/) with a locally installed LLM (e.g., `qwen2.5-coder:14b`), the first lines of your configuration may look as follows:
 
 ```
 # Global LLM configuration
 [llm]
-model = "gemma3:12b"
+model = "qwen2.5-coder:14b"
 base_url = "http://host.docker.internal:11434/v1"
 api_key = "ollama"
 max_tokens = 4096
