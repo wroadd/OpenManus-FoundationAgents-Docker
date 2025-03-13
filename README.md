@@ -1,2 +1,9 @@
 # OpenManus-Docker
-a docker image for OpenManus
+
+just a simple Docker image for OpenManus
+
+
+
+## License ##
+
+[MIT License](LICENSE.md)
