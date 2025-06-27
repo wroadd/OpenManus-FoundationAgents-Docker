@@ -26,7 +26,7 @@ temperature = 0.0
 Paste your API key to .env file
 
 ```
-openai_api_key = YOUR_API_KEY
+OPENAI_API_KEY = YOUR_API_KEY
 ```
 
 Save your changes, then open your terminal, navigate to your OpenManus folder and run the following command:
