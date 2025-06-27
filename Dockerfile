@@ -4,13 +4,21 @@ RUN apt-get update && apt-get install -y git
 
 WORKDIR /app
 
-RUN git clone https://github.com/mannaandpoem/OpenManus.git
+RUN git clone https://github.com/FoundationAgents/OpenManus.git
 WORKDIR /app/OpenManus
 
 RUN pip install --no-cache-dir -r requirements.txt
 
+RUN conda create -n open_manus_web python=3.12
+RUN conda activate open_manus_web
+
 RUN playwright install
 RUN playwright install-deps
 
-CMD ["python", "main.py"]
+RUN git clone https://github.com/YunQiAI/OpenManusWeb.git
+WORKDIR /app/OpenManus/OpenManusWeb
+RUN pip install --no-cache-dir -r requirements.txt
+RUN cp config/config.example.toml config/config.toml
+
+CMD ["python", "web_run.py"]
 # CMD ["bash"]
