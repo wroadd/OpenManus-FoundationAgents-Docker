@@ -1,9 +1,9 @@
 FROM python:3.12-slim
 
-RUN apt-get update && apt-get install -y git
+RUN apt-get update && apt-get install -y git, wget
 
 WORKDIR /app
-RUN wget -O anaconda.sh https://repo.anaconda.com/archive/Anaconda3-2025.06-0-Linux-x86_64.sh
+RUN wget -q -O anaconda.sh https://repo.anaconda.com/archive/Anaconda3-2025.06-0-Linux-x86_64.sh
 RUN bash anaconda.sh -b
 RUN source ~/anaconda3/bin/activate
 RUN conda init
