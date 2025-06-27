@@ -18,7 +18,6 @@ RUN playwright install-deps
 RUN git clone https://github.com/YunQiAI/OpenManusWeb.git
 WORKDIR /app/OpenManus/OpenManusWeb
 RUN pip install --no-cache-dir -r requirements.txt
-RUN cp config/config.example.toml config/config.toml
 
 CMD ["python", "web_run.py"]
 # CMD ["bash"]
