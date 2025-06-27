@@ -1,6 +1,6 @@
 FROM python:3.12-slim
 
-RUN apt-get update && apt-get install -y git, wget
+RUN apt-get update && apt-get install -y git wget
 
 WORKDIR /app
 RUN wget -q -O anaconda.sh https://repo.anaconda.com/archive/Anaconda3-2025.06-0-Linux-x86_64.sh
